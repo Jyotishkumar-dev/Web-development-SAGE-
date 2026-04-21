@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Global Taste Restaurant</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+.hero{
+background:#ff5a3c;
+color:white;
+padding:70px;
+text-align:center;
+}
+
+.menu{
+padding:40px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+margin-bottom:40px;
+}
+
+.card{
+background:white;
+width:240px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+.card h3{
+margin:10px;
+}
+
+.card p{
+margin:10px;
+}
+
+.price{
+color:#ff5a3c;
+font-weight:bold;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Global Taste Restaurant</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">Menu</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<h2>Taste Food From Around The World</h2>
+<p>Pakistan • Japan • Canada</p>
+</div>
+
+<div class="menu">
+
+<h2>Pakistan Food</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3">
+<h3>Biryani</h3>
+<p>Spicy chicken rice</p>
+<p class="price">₹250</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
+<h3>Nihari</h3>
+<p>Slow cooked curry</p>
+<p class="price">₹300</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398">
+<h3>Seekh Kebab</h3>
+<p>Grilled meat kebab</p>
+<p class="price">₹200</p>
+</div>
+
+</div>
+
+<h2>Japan Food</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c">
+<h3>Sushi</h3>
+<p>Rice with seafood</p>
+<p class="price">₹400</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1557872943-16a5ac26437e">
+<h3>Ramen</h3>
+<p>Noodle soup</p>
+<p class="price">₹350</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1625944525533-473f1b1c2b52">
+<h3>Tempura</h3>
+<p>Fried seafood</p>
+<p class="price">₹300</p>
+</div>
+
+</div>
+
+<h2>Canada Food</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908177522-432b3a7a5b3c">
+<h3>Poutine</h3>
+<p>Fries with cheese</p>
+<p class="price">₹280</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
+<h3>Butter Tarts</h3>
+<p>Sweet dessert</p>
+<p class="price">₹150</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3>Bacon Sandwich</h3>
+<p>Canadian sandwich</p>
+<p class="price">₹220</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<p>©  founder Jyotish verma</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Global Taste Restaurant</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+}
+
+/* Header */
+
+header{
+background:#111;
+color:white;
+display:flex;
+justify-content:space-between;
+padding:20px;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+/* Hero */
+
+.hero{
+background:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+/* Menu */
+
+.menu{
+padding:40px;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:160px;
+object-fit:cover;
+}
+
+.card h3{
+margin:10px;
+}
+
+.price{
+color:#ff5722;
+font-weight:bold;
+}
+
+/* Payment */
+
+.payment{
+background:white;
+padding:40px;
+margin:30px;
+border-radius:10px;
+}
+
+.payment button{
+padding:12px 20px;
+margin:10px;
+border:none;
+background:#ff5722;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Admin Panel */
+
+.admin{
+background:#222;
+color:white;
+padding:40px;
+margin-top:40px;
+}
+
+.admin input{
+padding:10px;
+margin:10px;
+width:200px;
+}
+
+footer{
+text-align:center;
+background:#111;
+color:white;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Global Taste</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#">Menu</a>
+<a href="#">Payment</a>
+<a href="#">Admin</a>
+</nav>
+</header>
+
+
+<div class="hero">
+<h1>World Food Experience</h1>
+<p>Pakistan • Japan • Canada</p>
+</div>
+
+
+<section class="menu">
+
+<h2>Popular Dishes</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3">
+<h3>Biryani</h3>
+<p class="price">₹250</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c">
+<h3>Sushi</h3>
+<p class="price">₹400</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908177522-432b3a7a5b3c">
+<h3>Poutine</h3>
+<p class="price">₹280</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="payment">
+
+<h2>Payment Options</h2>
+
+<p>Select your payment method:</p>
+
+<button>UPI</button>
+<button>Credit Card</button>
+<button>Debit Card</button>
+<button>Cash on Delivery</button>
+
+</section>
+
+
+<section class="admin">
+
+<h2>Admin Panel</h2>
+
+<p>Admin Login</p>
+
+<input type="text" placeholder="Admin Username">
+<br>
+<input type="password" placeholder="Password">
+<br>
+<button>Login</button>
+
+<p style="margin-top:20px;">
+(Admin can manage menu items, prices, and orders here in real system)
+</p>
+
+</section>
+
+
+<footer>
+<p>© 2026 Global Taste Restaurant</p>
+</footer>
+
+</body>
+</html>
