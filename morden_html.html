@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!--
+MASTER TEMPLATE TOPIC:
+MODERN HTML ELEMENTS
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern HTML Elements</title>
+</head>
+
+<body>
+
+    <!--==================================-->
+    <!-- FIGURE & FIGCAPTION -->
+    <!--==================================-->
+
+    <section>
+        <h2>Figure & Figcaption Example</h2>
+
+        <!-- figure groups media content -->
+        <!-- figcaption adds caption for image -->
+
+        <figure>
+            <img
+    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    alt="HTML coding image"
+    width="400"
+    height="300"
+>
+
+            <figcaption>
+                This is a simple HTML image example.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!--==================================-->
+    <!-- DETAILS & SUMMARY -->
+    <!--==================================-->
+
+    <section>
+        <h2>Expandable List</h2>
+
+        <!-- details creates expandable area -->
+        <!-- summary is clickable title -->
+
+        <details>
+            <summary>What is HTML?</summary>
+
+            <p>
+                HTML stands for HyperText Markup Language.
+                It is used to create the structure of web pages.
+            </p>
+        </details>
+    </section>
+
+    <!--==================================-->
+    <!-- PROGRESS -->
+    <!--==================================-->
+
+    <!-- current progress
+         max = maximum value -->
+
+    <p>HTML Course Progress:</p>
+
+    <progress value="70" max="100"></progress>
+
+    <br><br>
+
+    <!--==================================-->
+    <!-- METER -->
+    <!--==================================-->
+
+    <!-- meter displays measurement -->
+
+    <p>Battery Level:</p>
+
+    <meter value="0.8">80%</meter>
+
+    <br><br>
+
+    <p>Student Performance:</p>
+
+    <meter
+        value="85"
+        min="0"
+        max="100"
+        low="30"
+        high="70"
+        optimum="90">
+    </meter>
+
+    <br><br>
+
+    <p>Disk Usage:</p>
+
+    <meter
+        value="60"
+        min="0"
+        max="100">
+    </meter>
+
+    <br><br>
+
+    <!--==================================-->
+    <!-- CANVAS -->
+    <!--==================================-->
+
+    <section>
+        <h2>Canvas Example</h2>
+
+        <!--
+        canvas is used for drawing graphics.
+        canvas itself is blank.
+        JavaScript draws inside it.
+        -->
+
+        <canvas
+            id="mycanvas"
+            width="400"
+            height="200"
+            style="border:1px solid hsl(0, 0%, 0%);">
+        </canvas>
+
+    </section>
+
+    <!--==================================-->
+    <!-- JAVASCRIPT -->
+    <!--==================================-->
+
+    <script>
+
+        const canvas = document.getElementById("mycanvas");
+        const ctx = canvas.getContext("2d");
+
+        /* draw rectangle */
+
+        ctx.fillStyle = "red";
+
+        ctx.fillRect(50, 50, 150, 100);
+
+    </script>
+
+<!---
+Entities display special characters.
+-->
+
+<p> less then symbol: &lt;/p>
+<P> Greater then symbol: &gt;</P>
+<p> copyright symbol &copy;
+<p> trademark symbol: &trade;</p>
+<p> non-Breaking space examples:</p>
+<p> hello&nbsp;&nbsp;&nbsp;world</p>
+<p> hello                           world</p>
+<li> Dollar: $</li>
+<li> Euro: €</li>
+<li> Pound: £</li>
+<li> Yen: ¥</li>
+<li>Rupees: ₹</li>
+<p> </p>
+</p>
+</body>
+</html>
